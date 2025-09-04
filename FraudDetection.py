@@ -11,7 +11,7 @@ from sklearn.metrics import classification_report, confusion_matrix, accuracy_sc
 from imblearn.over_sampling import SMOTE
 
 # 1. Load dataset
-df = pd.read_csv("creditcard.csv")  # Make sure the CSV is in same folder
+df = pd.read_csv("creditcard.csv")  
 
 # 2. Explore data
 print("Dataset shape:", df.shape)
@@ -47,3 +47,4 @@ y_pred = model.predict(X_test)
 print("\nConfusion Matrix:\n", confusion_matrix(y_test, y_pred))
 print("\nClassification Report:\n", classification_report(y_test, y_pred))
 print("Accuracy:", accuracy_score(y_test, y_pred))
+
